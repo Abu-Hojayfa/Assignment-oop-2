@@ -1,0 +1,12 @@
+ @Override
+    public void actionPerformed(ActionEvent e){
+            int n1=Integer.parseInt(N1.getText());
+            int n2=Integer.parseInt(N2.getText());
+            int result=0;
+        if(e.getSource()==add){
+             result=n1+n2;
+        } else if (e.getSource()==subtract) {
+            result=n1-n2;
+        }
+            Result.setText(String.toString(result));
+    }
